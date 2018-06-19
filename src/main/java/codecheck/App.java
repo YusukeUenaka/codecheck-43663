@@ -18,9 +18,6 @@ public class App {
 			    logger.error("response=" + e.getResponse().readEntity(String.class), e);
 			    throw e;
 			}
-			
-			
-			
 		}
 	}
 }
