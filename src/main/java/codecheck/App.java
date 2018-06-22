@@ -112,8 +112,8 @@ public class App {
             System.out.println("50:" + encode(String.valueOf(7), SHIN_9));
             return  encode(String.valueOf(7), SHIN_9);
         }
-        
-        
+
+
         int a = String.valueOf(input).length();
         int x = 10;
         ArrayList<Integer> base = new ArrayList<>();
@@ -125,7 +125,11 @@ public class App {
             resultInt += base.get(k);
             System.out.println("55:" + resultInt);
         }
-
+        int outputInt = resultInt-input;
+        result = encode(String.valueOf(resultInt),SHIN_9);
+        output = encode(String.valueOf(outputInt),SHIN_9);
+        result = A +" + " + output + " = " + result;
+        
         //System.out.println("55:" + a);
         //System.out.println("56:" + base);
         /*
@@ -137,11 +141,11 @@ public class App {
 
 
         //System.out.println("3:"+x);
-        result = encode(String.valueOf(x), SHIN_9);
+        //result = encode(String.valueOf(x), SHIN_9);
         //System.out.println("9:"+result);
-        output = encode(String.valueOf(input + x),SHIN_9);
+        //output = encode(String.valueOf(input + x),SHIN_9);
         //System.out.println("99:"+output);
-        result = A +" + " + result + " = " + output;
+        //result = A +" + " + result + " = " + output;
         return result;
     }
 
